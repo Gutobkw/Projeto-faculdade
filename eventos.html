@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Eventos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+ <header class="cabecalho">
+        <nav class="menu">
+            <a class="links-menu" href="index.html">Home</a>
+            <a class="links-menu" href="">serviços</a>
+            <a class="links-menu" href="eventos.html">eventos</a>
+            <a class="links-menu" href="">login</a>
+        </nav>
+    </header>
+    <div class="conteiner_eventos">
+        <h1>Calendário de Eventos</h1>
+        <div class="event-form">
+            <h2>Criar Evento</h2>
+            <form>
+                <label for="event-name">Nome do Evento:</label>
+                <input type="text" id="event-name" required>
+
+                <label for="event-date">Data:</label>
+                <input type="date" id="event-date" required>
+
+                <label for="event-description">Descrição:</label>
+                <textarea id="event-description" required></textarea>
+
+                <button type="submit">Criar Evento</button>
+            </form>
+        </div>
+
+        <div class="event-list">
+            <h2>Eventos Próximos</h2>
+            <ul id="events">
+                <li>Evento 1 - 12/07/2024 <button class="rsvp-btn">RSVP</button></li>
+                <li>Evento 2 - 15/07/2024 <button class="rsvp-btn">RSVP</button></li>
+            </ul>
+        </div>
+
+        <div class="notifications">
+            <h2>Notificações</h2>
+            <p>Você tem 2 eventos próximos!</p>
+        </div>
+    </div>
+</body>
+</html>
